@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <p>{{$datas}}</p>
+
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">

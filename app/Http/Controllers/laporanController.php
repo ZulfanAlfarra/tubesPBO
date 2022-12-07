@@ -44,7 +44,6 @@ class laporanController extends Controller
         $totalPemasukanBulanan = 0;
         $totalBulanan = 0;
 
-        $datas = pemasukan::where('name', Auth::user()->name)->get();
 
             $dataPengeluaran = pengeluaran::whereBetween('created_at',[$start,$end])->get();
             $dataPemasukan = pemasukan::whereBetween('created_at',[$start,$end])->get();
