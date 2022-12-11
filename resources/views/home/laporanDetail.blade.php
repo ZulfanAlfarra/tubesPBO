@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
+
     <div class="d-print-none">
         <form class="row" action="{{ url('laporanDetail') }}" method="GET">
         @csrf 

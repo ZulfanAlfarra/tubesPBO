@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm d-print-none">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm d-print-none">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand fw-bold text-info" href="{{ url('/') }}">
                     CAMAT
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -30,7 +30,7 @@
                             <a class="nav-link" href="/tubesPBO/public/awal">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/tubesPBO/public/laporan">Transaksi</a>
+                            <a class="nav-link" href="/tubesPBO/public/laporan">Laporan</a>
                         </li>
                         @guest
                             @if (Route::has('login'))

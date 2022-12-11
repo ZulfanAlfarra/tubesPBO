@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Input;
 use App\Models\pengeluaran;
 use App\Models\pemasukan;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class laporanController extends Controller
 {
@@ -30,6 +31,7 @@ class laporanController extends Controller
      */
     public function create()
     {
+        $datas = pemasukan::where('uangMasuk', Auth::user()->name)->get();
         $start = Carbon::now()->startOfMonth()->format('Y-m-d');
         $end = Carbon::now()->endOfMonth()->addDays()->format('Y-m-d');
 

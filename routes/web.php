@@ -16,7 +16,7 @@ use App\Http\Controllers\laporanController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.landing');
 });
 
 route::middleware(['auth'])->group(function(){
